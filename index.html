@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+    <!-- tailwind and daisy ui css link -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Lato:wght@300;400;700;900&display=swap"
+        rel="stylesheet" />
+
+    <!-- google icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: " #F85559",
+                    },
+                },
+            },
+        };
+    </script>
+
+    <!-- font here -->
+    <style>
+        .font-lato {
+            font-family: "Lato", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-lato">
+    <header>
+        <!-- navbar start -->
+        <div class="navbar container mx-auto mt-10 bg-clifford justify-between rounded-full">
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                </div>
+
+                <img class="btn btn-ghost normal-case text-xl" src="images/logo.png" alt="" />
+                <span class="text-white text-2xl">Fruit Burst</span>
+            </div>
+
+            <div class="navbar-end invisible md:visible lg:visible">
+                <div class="join">
+                    <input class="input input-bordered join-item rounded-full bg-white boder-none"
+                        placeholder="Search here" />
+                    <button class="btn bg-white join-item rounded-r-full border-none">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- navbar end-->
+    </header>
+
+    <main>
+        <!-- slider here -->
+        <section class="hero min-h-screen container mx-auto rounded-lg mt-2">
+            <div class="carousel w-full">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/banner1.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/banner2.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                    <img src="images/banner3.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                    <img src="images/banner4.png" class="w-full" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- <section>
+        <div class="flex border-solid border-slate-950 bg-red">
+          <div class="card w-32 bg-base-100">
+            <figure class="p-1">
+              <img src="images/fruit1.png" alt="Fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Strawberry</h2>
+            </div>
+          </div>
+          <div class="card w-32 bg-base-100">
+            <figure class="p-1">
+              <img src="images/fruit1.png" alt="Fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Strawberry</h2>
+            </div>
+          </div>
+          <div class="card w-32 bg-base-100">
+            <figure class="p-1">
+              <img src="images/fruit1.png" alt="Fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Strawberry</h2>
+            </div>
+          </div>
+          <div class="card w-32 bg-base-100">
+            <figure class="p-1">
+              <img src="images/fruit1.png" alt="Fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Strawberry</h2>
+            </div>
+          </div>
+          <div class="card w-32 bg-base-100">
+            <figure class="p-1">
+              <img src="images/fruit1.png" alt="Fruit" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Strawberry</h2>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+        <section>
+            <div class="title">
+                <h1 class="mb-5 text-3xl font-bold text-center mt-14">
+                    Why Choose Us
+                </h1>
+                <p class="text-center">
+                    Contrary to popular belief, is not simply random text. It has roots
+                    in a piece of classical <br />
+                    Latin literature from 45 BC, making it over 2000 years old.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto grid grid-flow-col gap-3 mt-10 mb-10">
+                <div>
+                    <div class="flex items-center">
+                        <i class="fa-solid align-center fa-users w-8 h-8 bg-grey mx-auto rounded-full"></i>
+
+                        <div class="ml-4">
+                            <h2 class="text-xl font-semibold">Dedicated Team</h2>
+                            <hr />
+                            <p>
+                                Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-users w-8 h-8 bg-grey mx-auto rounded-full"></i>
+
+                        <div class="ml-4">
+                            <h2 class="text-xl font-semibold">Fresh is Best</h2>
+                            <hr />
+                            <p>
+                                Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fa-solid fa-users w-8 h-8 bg-grey mx-auto rounded-full"></i>
+
+                        <div class="ml-4">
+                            <h2 class="text-xl font-semibold">Gift Certificates</h2>
+                            <hr />
+                            <p>
+                                Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img class="w-full" src="images/whychoose1.png " alt="" />
+                </div>
+                <div>
+                    <div class="flex items-center">
+                        <div class="mr-4 text-end">
+                            <h2 class="text-xl font-semibold">Dedicated Team</h2>
+                            <hr />
+                            <p>
+                                Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-users w-8 h-8 bg-grey mx-auto rounded-full"></i>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="mr-4 text-end">
+                            <h2 class="text-xl font-semibold">Fresh is Best</h2>
+                            <hr />
+                            <p>
+                                Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-users w-8 h-8 bg-grey mx-auto rounded-full"></i>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="mr-4 text-end">
+                            <h2 class="text-xl font-semibold">Gift Certificates</h2>
+                            <hr />
+                            <p>
+                                Professional employees are there for you to pick the most
+                                amazing and fresh fruits.
+                            </p>
+                        </div>
+                        <i class="fa-solid fa-users w-8 h-8 bg-grey mx-auto rounded-full justify-center"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- card section -->
+    </main>
+    <!-- footer start here -->
+
+    <footer class="footer footer-center p-5 bg-black text-primary-content">
+        <div class="flex">
+            <img class="btn-ghost normal-case text-xl" src="images/logo.png" alt="" />
+            <h1 class="text-white text-2xl">Fruit Burst</h1>
+        </div>
+        <div class="flex list-none gap-2 lg:gap-10 text-white">
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us </a></li>
+            <li><a href="">Shop</a></li>
+            <li><a href="">All Fruits </a></li>
+            <li><a href="">Support</a></li>
+            <li><a href="">My Account</a></li>
+        </div>
+        <div>
+            <div class="grid grid-flow-col gap-5">
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-apple"></i>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
