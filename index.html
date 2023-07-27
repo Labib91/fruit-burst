@@ -47,7 +47,7 @@
 <body class="font-lato">
   <header>
     <!-- navbar start -->
-    <div class="navbar container mx-auto mt-10 bg-clifford justify-between rounded-full">
+    <div class="navbar container mx-auto mt-10 bg-clifford justify-between rounded-full ">
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1 text-white">
           <li><a>Home</a></li>
@@ -211,7 +211,7 @@
     <!-- date item -->
     <section>
       <div
-        class="grid grid-cols-1 lg:grid-cols-2 mt-10 lg:mt-40 lg:text-start justify-center text-center container mx-auto">
+        class="grid grid-cols-1 lg:grid-cols-2 mt-10 lg:mt-40 lg:text-start justify-between sm:justify-center text-center container mx-auto">
         <div>
           <h1 class="mb-1 text-3xl font-bold">Deal of the day</h1>
           <p class="p-1">
@@ -221,7 +221,7 @@
           </p>
         </div>
         <div class="">
-          <div class="grid grid-flow-col gap-5 justify-center text-center auto-cols-max">
+          <div class="grid grid-flow-col gap-5 justify-center lg:justify-end text-center auto-cols-max">
             <div class="flex flex-col">
               <span class="countdown font-mono text-5xl">
                 <span style="--value: 15"></span>
@@ -253,6 +253,7 @@
     <!-- date end -->
 
     <!-- Open the modal using ID.showModal() method -->
+
     <div class="container mx-auto gap-40 justify-center text-center">
       <button onclick="my_modal_2.showModal()">
         <div class="card w-60 bg-base-100">
@@ -376,20 +377,19 @@
                       <!-- testimonial section -->
 
                       <section>
-                        <div class="hero min-h-screen container mx-auto"
-                          style="background-image: url(./images/team.png)">
-                          <div class="hero-overlay bg-opacity-60"></div>
-                          <div class="text-center text-neutral-content">
-                            <div class="max-w-md">
-                              <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                        <div class="hero min-h-screen container  mx-auto"
+                          style="background-image: url(./images/team.png);border-radius: 20px;  ">
+                          <div class="hero-overlay"></div>
+                          <div class="text-center text-neutral-content p-20">
+                            <div class="">
+                              <h1 class="mb-5 text-5xl font-bold mt-10">Meet the team section</h1>
                               <p class="mb-5">
                                 Contrary to popular belief, is not simply random text. It has
                                 roots in a piece of classical Latin literature from 45 BC,
                                 making it over 2000 years old.
                               </p>
                               <section>
-                                <div
-                                  class="grid grid-cols-1 lg:grid-cols-4 justify-content-center align-items-center g-2 ml-[-200px] mr-[-200px] mt-400px">
+                                <div class="grid grid-cols-1 lg:grid-cols-4 ">
                                   <div class="card">
                                     <figure class="px-2 pt-2">
                                       <img src="/images/member1.png" alt="Shoes" class="rounded-xl items-center" />
@@ -469,115 +469,117 @@
 
                       <!-- dedicated section -->
 
-                      <div class="grid grid-cols-1 lg:grid-cols-3 mt-20 mb-20  container mx-auto">
-                        <div class="p-5">
-                          <figure class="md:flex   p-2 md:p-0">
-                            <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full mx-auto"
-                              src="/images/people-group-solid.svg" alt="" width="40" height="40">
-                            <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
-                              <blockquote>
-                                <p class="text-lg font-medium">
-                                  Dedicated Team
-                                </p>
-                                <hr>
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
-                                </p>
-                              </blockquote>
+                      <section>
+                        <div class="grid grid-cols-1 lg:grid-cols-3 mt-20 mb-20  container mx-auto">
+                          <div class="p-5">
+                            <figure class="md:flex   p-2 md:p-0">
+                              <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full mx-auto"
+                                src="/images/people-group-solid.svg" alt="" width="40" height="40">
+                              <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
+                                <blockquote>
+                                  <p class="text-lg font-medium">
+                                    Dedicated Team
+                                  </p>
+                                  <hr>
+                                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                  </p>
+                                </blockquote>
 
-                            </div>
-                          </figure>
-                          <figure class="md:flex  p-2 md:p-0">
-                            <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full  mx-auto"
-                              src="/images/heart-regular.svg" alt="" width="40" height="40">
-                            <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
-                              <blockquote>
-                                <p class="text-lg font-medium">
-                                  Fresh is Best
-                                </p>
-                                <hr>
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
-                                </p>
-                              </blockquote>
+                              </div>
+                            </figure>
+                            <figure class="md:flex  p-2 md:p-0">
+                              <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full  mx-auto"
+                                src="/images/heart-regular.svg" alt="" width="40" height="40">
+                              <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
+                                <blockquote>
+                                  <p class="text-lg font-medium">
+                                    Fresh is Best
+                                  </p>
+                                  <hr>
+                                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                  </p>
+                                </blockquote>
 
-                            </div>
-                          </figure>
-                          <figure class="md:flex p-2 md:p-0">
-                            <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full mx-auto"
-                              src="/images/gift-solid.svg" alt="" width="40" height="40">
-                            <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
-                              <blockquote>
-                                <p class="text-lg font-medium">
-                                  Gift Certificates
-                                </p>
-                                <hr>
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
-                                </p>
-                              </blockquote>
+                              </div>
+                            </figure>
+                            <figure class="md:flex p-2 md:p-0">
+                              <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full mx-auto"
+                                src="/images/gift-solid.svg" alt="" width="40" height="40">
+                              <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
+                                <blockquote>
+                                  <p class="text-lg font-medium">
+                                    Gift Certificates
+                                  </p>
+                                  <hr>
+                                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                  </p>
+                                </blockquote>
 
-                            </div>
-                          </figure>
+                              </div>
+                            </figure>
+                          </div>
+
+
+
+
+                          <div class="p-5 mt-5 w-auto ">
+                            <img src="images/whychoose1.png" alt="" class="md:flex p-2 md:p-0 h-auto">
+                          </div>
+
+
+
+
+
+                          <div class="p-5">
+                            <figure class="md:flex p-2 md:p-0">
+                              <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full mx-auto"
+                                src="/images/carrot-solid.svg" alt="" width="40" height="40">
+                              <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
+                                <blockquote>
+                                  <p class="text-lg font-medium">
+                                    Integrated Supplier
+                                  </p>
+                                  <hr>
+                                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                  </p>
+                                </blockquote>
+
+                              </div>
+                            </figure>
+                            <figure class="md:flex p-2 md:p-0">
+                              <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full mx-auto"
+                                src="/images/ice-cream-solid.svg" alt="" width="40" height="40">
+                              <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
+                                <blockquote>
+                                  <p class="text-lg font-medium">
+                                    Sustainable Practice
+                                  </p>
+                                  <hr>
+                                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                  </p>
+                                </blockquote>
+
+                              </div>
+                            </figure>
+                            <figure class="md:flex p-2 md:p-0">
+                              <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full  mx-auto"
+                                src="/images/thumbs-up-regular.svg" alt="" width="40" height="40">
+                              <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
+                                <blockquote>
+                                  <p class="text-lg font-medium">
+                                    The Benefits Only
+                                  </p>
+                                  <hr>
+                                  <p>Professional employees are there for you to pick the most amazing and fresh fruits.
+                                  </p>
+                                </blockquote>
+
+                              </div>
+                            </figure>
+                          </div>
                         </div>
 
-
-
-
-                        <div class="p-5 mt-5 w-auto ">
-                          <img src="images/whychoose1.png" alt="" class="md:flex p-2 md:p-0 h-auto">
-                        </div>
-
-
-
-
-
-                        <div class="p-5">
-                          <figure class="md:flex p-2 md:p-0">
-                            <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full mx-auto"
-                              src="/images/carrot-solid.svg" alt="" width="40" height="40">
-                            <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
-                              <blockquote>
-                                <p class="text-lg font-medium">
-                                  Integrated Supplier
-                                </p>
-                                <hr>
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
-                                </p>
-                              </blockquote>
-
-                            </div>
-                          </figure>
-                          <figure class="md:flex p-2 md:p-0">
-                            <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full mx-auto"
-                              src="/images/ice-cream-solid.svg" alt="" width="40" height="40">
-                            <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
-                              <blockquote>
-                                <p class="text-lg font-medium">
-                                  Sustainable Practice
-                                </p>
-                                <hr>
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
-                                </p>
-                              </blockquote>
-
-                            </div>
-                          </figure>
-                          <figure class="md:flex p-2 md:p-0">
-                            <img class="w-10 h-10 md:w-10 md:h-auto md:rounded-none rounded-full  mx-auto"
-                              src="/images/thumbs-up-regular.svg" alt="" width="40" height="40">
-                            <div class="pt-1 md:p-2 text-center md:text-left space-y-4">
-                              <blockquote>
-                                <p class="text-lg font-medium">
-                                  The Benefits Only
-                                </p>
-                                <hr>
-                                <p>Professional employees are there for you to pick the most amazing and fresh fruits.
-                                </p>
-                              </blockquote>
-
-                            </div>
-                          </figure>
-                        </div>
-                      </div>
-
+                      </section>
 
   </main>
 
